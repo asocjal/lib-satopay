@@ -1,4 +1,4 @@
-package lib.satopay.commands;
+package lib.satopay;
 
 import bittech.lib.protocol.Command;
 

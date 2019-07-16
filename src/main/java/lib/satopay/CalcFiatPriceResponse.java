@@ -1,4 +1,4 @@
-package lib.satopay.commands;
+package lib.satopay;
 
 import java.math.BigDecimal;
 
