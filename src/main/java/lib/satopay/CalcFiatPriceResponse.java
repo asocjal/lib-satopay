@@ -1,18 +1,17 @@
 package lib.satopay;
 
 import java.math.BigDecimal;
+import java.util.Map;
 
 import bittech.lib.protocol.Response;
 import bittech.lib.utils.Require;
 
 public class CalcFiatPriceResponse implements Response {
 
-	public final BigDecimal price;
-	public final String calculationId;
+	Map<String, BigDecimal> prices; // prices per bank
 	
-	public CalcFiatPriceResponse(final BigDecimal price, final String calculationId) {
-		this.price = Require.notNull(price, "price");
-		this.calculationId = Require.notNull(calculationId, "calculationId");
+	public CalcFiatPriceResponse(final Map<String, BigDecimal> prices) {
+		this.prices = Require.notNull(prices, "prices");
 	}
 
 }
