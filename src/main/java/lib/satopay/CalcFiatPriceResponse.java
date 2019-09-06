@@ -8,7 +8,7 @@ import bittech.lib.utils.Require;
 
 public class CalcFiatPriceResponse implements Response {
 
-	Map<String, BigDecimal> prices; // prices per bank
+	public Map<String, BigDecimal> prices; // prices per bank
 	
 	public CalcFiatPriceResponse(final Map<String, BigDecimal> prices) {
 		this.prices = Require.notNull(prices, "prices");
